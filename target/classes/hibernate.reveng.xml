@@ -7,9 +7,25 @@
 	<table-filter match-catalog="lhjz" match-name="group_members" />
 	<table-filter match-catalog="lhjz" match-name="groups" />
 	<table-filter match-catalog="lhjz" match-name="users" />
+	<table-filter match-name="persistent_logins" match-catalog="lhjz"></table-filter>
+	<table-filter match-name="acl_class" match-catalog="lhjz"></table-filter>
+	<table-filter match-name="acl_entry" match-catalog="lhjz"></table-filter>
+	<table-filter match-name="acl_object_identity"
+		match-catalog="lhjz">
+	</table-filter>
+	<table-filter match-name="acl_sid" match-catalog="lhjz"></table-filter>
 	<table catalog="lhjz" name="authorities" class="Authority"></table>
 	<table catalog="lhjz" name="groups" class="Group"></table>
 	<table catalog="lhjz" name="users" class="User"></table>
 	<table catalog="lhjz" name="group_members" class="GroupMember"></table>
-	<table catalog="lhjz" name="group_authorities" class="GroupAuthority"></table>
+	<table catalog="lhjz" name="group_authorities"
+		class="GroupAuthority">
+	</table>
+	<table catalog="lhjz" name="persistent_logins"
+		class="PersistentLogin">
+	</table>
+	<table catalog="lhjz" name="acl_entry" class="AclEntry"></table>
+	<table catalog="lhjz" name="acl_sid" class="AclSid"></table>
+	<table catalog="lhjz" name="acl_class" class="AclClass"></table>
+	<table catalog="lhjz" name="acl_object_identity" class="AclObjectIdentity"></table>
 </hibernate-reverse-engineering>
